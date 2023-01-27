@@ -6,6 +6,7 @@ export ZSH="/Users/maxkopitz/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+
 plugins=(
     git 
     docker 
@@ -15,10 +16,13 @@ plugins=(
     colored-man-pages
     zsh-autosuggestions
     zsh-syntax-highlighting
+    fzf
 )
 
 ZSH_TMUX_AUTOSTART=false
 ZSH_TMUX_DEFAULT_SESSION_NAME="config"
+
+DISABLE_FZF_AUTO_COMPLETION="true"
 
 source $ZSH/oh-my-zsh.sh
 alias zshconfig="nv ~/.zshrc"
