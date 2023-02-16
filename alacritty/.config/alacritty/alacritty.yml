@@ -29,7 +29,7 @@ font:
     family: "JetBrainsMono Nerd Font"
     style: Italic 
   bold_italic:
-    family: "Jetbrain"
+    family: "JetbrainsMono Nerd Font"
     style: Bold Italic 
   size: 13.0
   # Offset is the extra space around each character. `offset.y` can be thought of
