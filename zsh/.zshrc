@@ -26,13 +26,13 @@ DISABLE_FZF_AUTO_COMPLETION="true"
 
 source $ZSH/oh-my-zsh.sh
 alias zshconfig="nv ~/.zshrc"
-alias nv="nv"
 alias nvconfig="nv ~/.config/nvim/"
 
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
+# Alias
 alias nv="nvim"
-
+alias whatsmyip="curl ipinfo.io/ip"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PNPM_HOME="/Users/maxkopitz/Library/pnpm"
