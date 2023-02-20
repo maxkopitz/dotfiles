@@ -30,6 +30,8 @@ alias nvconfig="nv ~/.config/nvim/"
 
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
+export PATH="$HOME/tools/nvim/bin:$PATH"
+
 # Alias
 alias nv="nvim"
 alias whatsmyip="curl ipinfo.io/ip"
@@ -69,4 +71,3 @@ if type "nvm" > /dev/null; then
   add-zsh-hook chpwd load-nvmrc
   load-nvmrc
 fi
-export PATH="/home/kopwithit/tools/nvim/bin:$PATH"
