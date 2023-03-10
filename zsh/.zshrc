@@ -16,10 +16,10 @@ plugins=(
     colored-man-pages
     zsh-autosuggestions
     zsh-syntax-highlighting
+    zsh-vim-mode
     fzf
 )
 
-ZSH_TMUX_AUTOSTART=false
 ZSH_TMUX_DEFAULT_SESSION_NAME="config"
 
 DISABLE_FZF_AUTO_COMPLETION="true"
@@ -39,6 +39,7 @@ alias whatsmyip="curl ipinfo.io/ip"
 
 export PNPM_HOME="/Users/maxkopitz/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+export PATH="/Applications/flameshot.app/Contents/MacOS/:$PATH"
 
 export PATH="/usr/local/go/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
