@@ -41,6 +41,8 @@ export PNPM_HOME="/Users/maxkopitz/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 export PATH="/Applications/flameshot.app/Contents/MacOS/:$PATH"
 
+export PATH="$HOME/dotfiles/bin/:$PATH"
+
 export PATH="/usr/local/go/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 
