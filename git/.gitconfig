@@ -1,0 +1,10 @@
+[user]
+	name = Max Kopitz 
+	email = maxkopitz02@gmail.com 
+[core]
+	editor = nvim
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
