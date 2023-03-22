@@ -12,6 +12,7 @@ install_macos() {
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   git clone https://github.com/softmoth/zsh-vim-mode ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  git clone  https://github.com/softmoth/zsh-vim-mode ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-vim-mode
 
   brew install ripgrep
   brew install wget 
@@ -21,6 +22,8 @@ install_macos() {
   brew install go
   brew install --cask alacritty
   brew install --cask protonvpn
+  brew install sqlite
+  brew install tree
 }
 
 install_oh_my_zsh() {
