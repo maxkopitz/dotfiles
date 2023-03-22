@@ -32,3 +32,9 @@ install_oh_my_zsh() {
     warn "oh-my-zsh already installed"
   fi
 }
+
+setup_ssh_config() {
+  #https://eecs280staff.github.io/tutorials/setup_caen.html#avoiding-repeated-2fa
+  echo -e '# SSH multiplexing\nHost *\n  ControlMaster auto\n  ControlPersist yes\n   ControlPath ~/.ssh/socket-%C\n  ServerAliveInterval 60\n  ServerAliveCountMax 5' >> ~/.ssh/config
+  chmod 600 ~/.ssh/config
+}
