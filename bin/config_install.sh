@@ -11,9 +11,16 @@ install_macos() {
   brew install font-hack-nerd-font
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   git clone https://github.com/softmoth/zsh-vim-mode ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
   brew install ripgrep
+  brew install wget 
+  brew install tmux
+  brew install nvim
+  brew install node
+  brew install go
+  brew install --cask alacritty
+  brew install --cask protonvpn
 }
 
 install_oh_my_zsh() {
