@@ -22,8 +22,10 @@ install_macos() {
   brew install go
   brew install --cask alacritty
   brew install --cask protonvpn
+  brew install --cask notion
   brew install sqlite
   brew install tree
+  brew install gh
 }
 
 install_oh_my_zsh() {
