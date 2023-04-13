@@ -26,6 +26,9 @@ install_macos() {
   brew install sqlite
   brew install tree
   brew install gh
+  brew install httpie
+  brew install fd
+  brew install --cask discord --no-quarantine
 }
 
 install_oh_my_zsh() {

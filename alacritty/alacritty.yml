@@ -84,5 +84,3 @@ mouse:
       program: open
     modifiers: Command
   hide_when_typing: false
-
-alt_send_esc: true
