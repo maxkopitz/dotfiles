@@ -29,6 +29,7 @@ install_macos() {
   brew install httpie
   brew install fd
   brew install --cask discord --no-quarantine
+  brew install docker
 }
 
 install_oh_my_zsh() {
