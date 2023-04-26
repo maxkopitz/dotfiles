@@ -30,8 +30,12 @@ install_macos() {
   brew install fd
   brew install --cask discord --no-quarantine
   brew install docker
+  brew install tmux-mem-cpu-load
 }
 
+install_tmux_depdencies() {
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+}
 install_oh_my_zsh() {
   if [[ ! -f ~/.zshrc ]]; then
     info "Installing oh my zsh..."
