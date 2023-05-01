@@ -9,8 +9,6 @@ ZSH_THEME="robbyrussell"
 
 plugins=(
     git 
-    docker 
-    docker-compose
     tmux 
     colorize
     colored-man-pages
@@ -25,8 +23,6 @@ ZSH_TMUX_DEFAULT_SESSION_NAME="config"
 DISABLE_FZF_AUTO_COMPLETION="true"
 
 source $ZSH/oh-my-zsh.sh
-alias zshconfig="nv ~/.zshrc"
-alias nvconfig="nv ~/.config/nvim/"
 
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
@@ -40,8 +36,6 @@ alias whatsmyip="curl ipinfo.io/ip"
 export PNPM_HOME="/Users/maxkopitz/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 export PATH="/Applications/flameshot.app/Contents/MacOS/:$PATH"
-
-export PATH="$HOME/dotfiles/bin/:$PATH"
 
 export PATH="/usr/local/go/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
@@ -74,3 +68,4 @@ if type "nvm" > /dev/null; then
   add-zsh-hook chpwd load-nvmrc
   load-nvmrc
 fi
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
