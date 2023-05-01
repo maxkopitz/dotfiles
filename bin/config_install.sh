@@ -31,10 +31,12 @@ install_macos() {
   brew install --cask discord --no-quarantine
   brew install docker
   brew install tmux-mem-cpu-load
+  brew install pnpm
 }
 
 install_tmux_depdencies() {
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 }
 install_oh_my_zsh() {
   if [[ ! -f ~/.zshrc ]]; then
