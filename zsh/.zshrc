@@ -27,6 +27,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
 export PATH="$HOME/tools/nvim/bin:$PATH"
+export PATH="$HOME/dotfiles/bin:$PATH"
 
 # Alias
 alias nv="nvim"
