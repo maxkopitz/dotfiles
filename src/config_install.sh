@@ -32,6 +32,9 @@ install_macos() {
   brew install docker
   brew install tmux-mem-cpu-load
   brew install pnpm
+  brew install jesseduffield/lazydocker/lazydocker
+  brew install lazydocker
+  brew install tokei
 }
 
 install_tmux_depdencies() {
