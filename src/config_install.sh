@@ -35,6 +35,7 @@ install_macos() {
   brew install jesseduffield/lazydocker/lazydocker
   brew install lazydocker
   brew install tokei
+  brew install stylua
 }
 
 install_tmux_depdencies() {
