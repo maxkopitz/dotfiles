@@ -70,3 +70,4 @@ if type "nvm" > /dev/null; then
   load-nvmrc
 fi
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
