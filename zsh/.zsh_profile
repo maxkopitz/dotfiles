@@ -1,0 +1,6 @@
+addToPathFront() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH=$1:$PATH
+    fi
+}
+addToPathFront $HOME/src/dotfiles/bin/.local/scripts
