@@ -30,6 +30,7 @@ export PATH="$HOME/tools/nvim/bin:$PATH"
 export PATH="$HOME/dotfiles/bin:$PATH"
 
 # Alias
+alias vim="nvim"
 alias nv="nvim"
 alias whatsmyip="curl ipinfo.io/ip"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
