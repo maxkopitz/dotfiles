@@ -1,6 +1,8 @@
+export XDG_CONFIG_HOME=$HOME/.config
 addToPathFront() {
     if [[ "$PATH" != *"$1"* ]]; then
         export PATH=$1:$PATH
     fi
 }
-addToPathFront $HOME/src/dotfiles/bin/.local/scripts
+addToPathFront $HOME/.local/scripts
+addToPathFront $HOME/.local/bin
