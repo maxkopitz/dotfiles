@@ -1,6 +1,8 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 import:
-  - ~/.config/alacritty/themes/themes/one_dark.yaml
+  - ~/.config/alacritty/themes/themes/rose-pine-moon.yaml
+env:
+  TERM: xterm-256color
 shell:
   program: /bin/zsh
   args:
