@@ -205,7 +205,6 @@ mode "$mode_system" {
     bindsym l exec --no-startup-id /home/kopwithit/.local/scripts/i3-exit lock, mode "default"
     bindsym e exec --no-startup-id /home/kopwithit/.local/scripts/i3-exit logout, mode "default"
     bindsym s exec --no-startup-id /home/kopwithit/.local/scripts/i3-exit suspend, mode "default"
-    bindsym h exec --no-startup-id /home/kopwithit/.local/scripts/i3-exit hibernate, mode "default"
     bindsym r exec --no-startup-id /home/kopwithit/.local/scripts/i3-exit reboot, mode "default"
     bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
