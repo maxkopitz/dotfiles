@@ -22,9 +22,6 @@ DISABLE_FZF_AUTO_COMPLETION="true"
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="$HOME/tools/nvim/bin:$PATH"
-export PATH="$HOME/dotfiles/bin:$PATH"
-
 alias whatsmyip="curl ipinfo.io/ip"
 alias vim="nvim"
 
