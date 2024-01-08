@@ -11,15 +11,10 @@ general {
         interval = 5
 }
 
-order += "disk /"
 order += "load"
 order += "memory"
 order += "cpu_temperature 0"
 order += "tztime local"
-
-battery all {
-        format = "%status %percentage %remaining"
-}
 
 tztime local {
         format = "%Y-%m-%d %H:%M:%S"
@@ -27,10 +22,6 @@ tztime local {
 
 load {
         format = "%1min"
-}
-
-disk "/" {
-        format = "%avail"
 }
 
 memory {
