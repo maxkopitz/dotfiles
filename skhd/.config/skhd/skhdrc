@@ -1,0 +1,28 @@
+# open alacritty 
+lctrl + alt + cmd - return : open -n -a alacritty
+# focus window
+lctrl + alt + cmd - h : yabai -m window --focus west
+lctrl + alt + cmd - j : yabai -m window --focus south
+lctrl + alt + cmd - k : yabai -m window --focus north
+lctrl + alt + cmd - l : yabai -m window --focus east
+# swap window
+lctrl + alt + cmd + shift - h : yabai -m window --swap west
+lctrl + alt + cmd + shift - j : yabai -m window --swap south
+lctrl + alt + cmd + shift - k : yabai -m window --swap north
+lctrl + alt + cmd + shift - l : yabai -m window --swap east
+# move managed window
+lctrl + alt + cmd - w : yabai -m window --warp north
+lctrl + alt + cmd - a : yabai -m window --warp west
+lctrl + alt + cmd - s : yabai -m window --warp south
+lctrl + alt + cmd - d : yabai -m window --warp east
+# fast focus desktop
+lctrl + alt + cmd - 1 : yabai -m space --focus 1
+lctrl + alt + cmd - 2 : yabai -m space --focus 2
+lctrl + alt + cmd - 3 : yabai -m space --focus 3
+lctrl + alt + cmd - 4 : yabai -m space --focus 4
+lctrl + alt + cmd - 5 : yabai -m space --focus 5
+lctrl + alt + cmd - 6 : yabai -m space --focus 6
+lctrl + alt + cmd - 7 : yabai -m space --focus 7
+lctrl + alt + cmd - 8 : yabai -m space --focus 8
+lctrl + alt + cmd - 9 : yabai -m space --focus 9
+lctrl + alt + cmd - 0 : yabai -m space --focus 10
