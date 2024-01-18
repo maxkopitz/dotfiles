@@ -200,10 +200,9 @@ bar {
         status_command i3status
 }
 
-set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+set $mode_system System (l) lock, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id /home/kopwithit/.local/scripts/i3-exit lock, mode "default"
-    bindsym e exec --no-startup-id /home/kopwithit/.local/scripts/i3-exit logout, mode "default"
     bindsym s exec --no-startup-id /home/kopwithit/.local/scripts/i3-exit suspend, mode "default"
     bindsym r exec --no-startup-id /home/kopwithit/.local/scripts/i3-exit reboot, mode "default"
     bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
@@ -213,10 +212,3 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 bindsym $mod+p mode "$mode_system"
-bindsym $mod+Shift+x exec "\
-    echo 1 > /sys/class/leds/platform\:\:micmute/brightness; \
-    sleep 5; \
-    maim --hidecursor ~/screenshots/$(date +%Y-%b-%d--%H-%M-%S_maim | tr A-Z a-z).png; \
-    echo 0 > /sys/class/leds/platform\:\:micmute/brightness; \
-    i3-nagbar --message 'Screenshot created' --type warning & \
-    sleep 3; pkill i3-nagbar"
