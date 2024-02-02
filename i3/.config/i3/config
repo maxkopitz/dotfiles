@@ -202,7 +202,7 @@ bar {
         status_command i3status
 }
 
-set $mode_system System (l) lock, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+set $mode_system System (l) lock, (s) suspend, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id /home/kopwithit/.local/scripts/i3-exit lock, mode "default"
     bindsym s exec --no-startup-id /home/kopwithit/.local/scripts/i3-exit suspend, mode "default"
