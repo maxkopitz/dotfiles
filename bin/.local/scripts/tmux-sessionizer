@@ -11,6 +11,7 @@ else
     ~/.config \
     ~/src/umich/w24 \
     ~/src/umich/w24/EECS484/projects \
+    ~/src/umich/w24/EECS495 \
     ~/src/umich/f23 \
     -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
