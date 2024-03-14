@@ -1,9 +1,10 @@
 #!/bin/sh
+xrandr --auto && \
 xrandr --output DP-0 \
     --primary \
     --mode 2560x1440 \
     --pos 1080x240 \
-    --rate 165 \
+    --rate 155 \
     --rotate normal \
     --output HDMI-0 \
     --mode 1920x1080 \
