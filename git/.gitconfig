@@ -1,3 +1,5 @@
+[include]
+    path = ~/dotfiles/git/.gitsecrets
 [user]
 	name = Max Kopitz 
 	email = maxkopitz02@gmail.com 
