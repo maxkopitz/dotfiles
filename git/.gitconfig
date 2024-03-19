@@ -2,7 +2,7 @@
     path = /~/dotfiles/git/.gitsecrets
 [user]
 	name = Maxwell Kopitz 
-	email = git@maxwell.dev
+	email = accounts@maxwell.dev
 [core]
 	editor = nvim
 [alias]
