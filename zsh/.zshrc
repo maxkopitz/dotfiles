@@ -40,6 +40,7 @@ export VISUAL=nvim
 export EDITOR=nvim
 
 export PATH=$PATH:/usr/local/go/bin
+export SSH_AUTH_SOCK=~/.1password/agent.sock
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
