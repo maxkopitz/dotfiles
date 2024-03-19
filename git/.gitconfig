@@ -1,8 +1,8 @@
 [include]
     path = /home/kopwithit/dotfiles/git/.gitsecrets
 [user]
-	name = Max Kopitz 
-	email = maxkopitz02@gmail.com 
+	name = Maxwell Kopitz 
+	email = mlkopitz@umich.edu 
 [core]
 	editor = nvim
 [alias]
