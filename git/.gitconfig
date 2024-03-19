@@ -1,19 +1,25 @@
 [include]
     path = /~/dotfiles/git/.gitsecrets
+
 [user]
 	name = Maxwell Kopitz 
 	email = accounts@maxwell.dev
+
 [core]
 	editor = nvim
+
 [alias]
 	co = checkout
 	br = branch
 	ci = commit
 	st = status
-  lg = log --date=format:'%a %b %e, %Y' --pretty=format:'%C(yellow)%h%C(reset) %s %C(cyan)%cd%C(reset) %C(blue)%an%C(reset) %C(green)%d%C(reset)' --graph 
+    lg = log --date=format:'%a %b %e, %Y' --pretty=format:'%C(yellow)%h%C(reset) %s %C(cyan)%cd%C(reset) %C(blue)%an%C(reset) %C(green)%d%C(reset)' --graph 
+
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
+
 [diff]
     tool = vimdiff
+
 [includeIf "gitdir:~/src/umich"]
     path = /~/dotfiles/git/.gitschool
