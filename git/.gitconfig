@@ -1,5 +1,5 @@
 [include]
-    path = ~/dotfiles/git/.gitsecrets
+    path = /home/kopwithit/dotfiles/git/.gitsecrets
 [user]
 	name = Max Kopitz 
 	email = maxkopitz02@gmail.com 
