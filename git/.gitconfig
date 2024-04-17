@@ -3,7 +3,7 @@
 
 [user]
 	name = Maxwell Kopitz 
-	email = mlkopitz@umich.edu 
+	email = accounts@maxwell.dev 
 
 [core]
 	editor = nvim
@@ -21,5 +21,5 @@
 [diff]
     tool = vimdiff
 
-[includeIf "gitdir:~/src/umich"]
-    path = /~/dotfiles/git/.gitschool
+[includeIf "gitdir:~/src/umich/"]
+    path = ~/dotfiles/git/.gitschool
