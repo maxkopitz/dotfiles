@@ -11,12 +11,9 @@ ZSH_THEME="robbyrussell"
 plugins=(
     git 
     colorize
-    colored-man-pages
     zsh-syntax-highlighting
     fzf
 )
-
-ZSH_TMUX_DEFAULT_SESSION_NAME="config"
 
 DISABLE_FZF_AUTO_COMPLETION="true"
 
@@ -56,3 +53,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+bindkey -v
