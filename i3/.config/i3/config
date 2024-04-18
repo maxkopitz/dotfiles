@@ -207,8 +207,8 @@ bindsym $mod+p mode "$mode_system"
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-exec --no-startup-id 1password --start-minimized
-exec --no-startup-id obsidian --start-minimized
+exec --no-startup-id 1password --silent
+exec --no-startup-id obsidian
 
 
 # Use pactl to adjust volume in PulseAudio.
