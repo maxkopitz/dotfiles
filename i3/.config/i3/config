@@ -209,7 +209,7 @@ exec --no-startup-id nm-applet
 
 exec --no-startup-id 1password --silent
 exec --no-startup-id obsidian
-
+exec --no-startup-id systemctl --user start docker-desktop.service
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
