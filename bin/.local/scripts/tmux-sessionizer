@@ -3,18 +3,15 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find \
-    ~/src/projects \
-    ~/src \
-    ~/src/obsidian \
-    ~/dotfiles \
-    ~/.config \
-    ~/src/umich/w24 \
-    ~/src/umich/w24/EECS484/projects \
-    ~/src/umich/w24/EECS495 \
-    ~/src/umich/f23 \
-    -mindepth 1 -maxdepth 1 -type d \
-    | fzf \
+    selected=$(
+        (   echo ~/dotfiles; \
+            find \
+            ~/src/projects \
+            ~/src \
+            ~/dotfiles \
+            ~/.config \
+            -mindepth 1 -maxdepth 1 -type d) \
+        | fzf \
         --cycle \
         --layout=reverse)
 fi
