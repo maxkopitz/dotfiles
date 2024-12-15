@@ -9,6 +9,7 @@ else
             ~/src/projects \
             ~/src \
             ~/.config \
+            ~/exercism/lua \
             -mindepth 1 -maxdepth 1 -type d) \
         | fzf \
         --cycle \
