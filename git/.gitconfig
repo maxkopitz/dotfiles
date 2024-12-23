@@ -20,6 +20,3 @@
 
 [diff]
     tool = vimdiff
-
-[includeIf "gitdir:~/src/umich/"]
-    path = ~/dotfiles/git/.gitschool
