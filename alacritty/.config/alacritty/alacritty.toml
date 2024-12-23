@@ -1,5 +1,3 @@
-import = ["~/.config/alacritty/themes/themes/rose-pine-moon.toml"]
-live_config_reload = true
 
 [bell]
 duration = 0
@@ -61,7 +59,7 @@ multiplier = 3
 save_to_clipboard = true
 semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 
-[shell]
+[terminal.shell]
 args = ["-l", "-c", "tmux attach || tmux"]
 program = "/bin/zsh"
 
@@ -73,3 +71,9 @@ title = "Maxwell's Home"
 [window.padding]
 x = 0
 y = 0
+
+[general]
+live_config_reload = true
+import = ["~/.config/alacritty/themes/themes/rose-pine-moon.toml"]
+
+[terminal]
