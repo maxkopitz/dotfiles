@@ -67,3 +67,7 @@ bindkey -M vicmd 'y' vi-yank-xclip
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 export PATH=$PATH:$HOME/go/bin
+
+if [[ $(uname) == "Darwin" ]]; then
+    export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
+fi
