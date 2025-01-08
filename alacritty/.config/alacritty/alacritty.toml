@@ -1,3 +1,5 @@
+import = ["/home/kopwithit/.config/alacritty/themes/themes/rose-pine-moon.toml"]
+live_config_reload = true
 
 [bell]
 duration = 0
@@ -22,7 +24,7 @@ shape = "Block"
 TERM = "xterm-256color"
 
 [font]
-size = 13.0
+size = 12.0
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
@@ -57,9 +59,9 @@ multiplier = 3
 
 [selection]
 save_to_clipboard = true
-semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+semantic_escape_chars = ''',│`|:"' ()[]{}<>	'''
 
-[terminal.shell]
+[shell]
 args = ["-l", "-c", "tmux attach || tmux"]
 program = "/bin/zsh"
 
@@ -71,9 +73,3 @@ title = "Maxwell's Home"
 [window.padding]
 x = 0
 y = 0
-
-[general]
-live_config_reload = true
-import = ["~/.config/alacritty/themes/themes/rose-pine-moon.toml"]
-
-[terminal]
