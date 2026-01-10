@@ -11,7 +11,6 @@ ZSH_THEME="robbyrussell"
 plugins=(
     git 
     colorize
-    zsh-syntax-highlighting
     fzf
 )
 
