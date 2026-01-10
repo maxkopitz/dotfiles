@@ -74,6 +74,6 @@ y = 0
 
 [general]
 live_config_reload = true
-import = ["/home/kopwithit/.config/alacritty/themes/themes/rose-pine-moon.toml"]
+import = ["/home/kopwithit/.config/alacritty/themes/themes/rose-pine-moon.toml", "/Users/maxwellkopitz/.config/alacritty/themes/themes/rose-pine-moon.toml"]
 
 [terminal]
