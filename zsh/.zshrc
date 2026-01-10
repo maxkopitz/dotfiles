@@ -71,3 +71,6 @@ if [[ $(uname) == "Darwin" ]]; then
     export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
 fi
 export PATH=$HOME/.luarocks/bin:$PATH
+
+# opencode
+export PATH=/Users/maxwellkopitz/.opencode/bin:$PATH
