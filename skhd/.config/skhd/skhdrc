@@ -1,5 +1,5 @@
 # open alacritty 
-lctrl + alt + cmd - return : open -n -a alacritty
+#lctrl + alt + cmd - return : open -n -a alacritty
 # focus window
 #lctrl + alt + cmd - h : yabai -m window --focus west
 #lctrl + alt + cmd - j : yabai -m window --focus south

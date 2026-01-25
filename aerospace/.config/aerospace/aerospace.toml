@@ -17,12 +17,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 [mode.main.binding]
     # See: https://nikitabobko.github.io/AeroSpace/goodies#open-a-new-window-with-applescript
-    ctrl-alt-cmd-enter = '''exec-and-forget osascript -e '
-    tell application "Terminal"
-        do script
-        activate
-    end tell'
-    '''
+    ctrl-alt-cmd-enter = 'exec-and-forget open -n -a alacritty'
 
     # i3 wraps focus by default
     ctrl-alt-cmd-j =         'focus --boundaries-action wrap-around-the-workspace left'
