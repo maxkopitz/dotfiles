@@ -27,6 +27,7 @@ alias vim="nvim"
 if [[ $(uname) == "Darwin" ]]; then
     PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
     export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+    export PATH="/opt/homebrew/bin:$PATH"
 else;
     export SSH_AUTH_SOCK=~/.1password/agent.sock
 fi
