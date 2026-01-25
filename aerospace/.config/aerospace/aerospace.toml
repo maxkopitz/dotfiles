@@ -1,7 +1,7 @@
 # Reference: https://github.com/i3/i3/blob/next/etc/config
 
 config-version = 2
-
+start-at-login = true 
 # In i3, all workspaces are phantom
 persistent-workspaces = []
 
