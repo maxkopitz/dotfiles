@@ -1,79 +1,29 @@
-
-[bell]
-duration = 0
-
-[colors]
-draw_bold_text_with_bright_colors = true
-
-[cursor]
-blink_timeout = 5
-thickness = 0.15
-unfocused_hollow = true
-
-[cursor.style]
-blinking = "off"
-shape = "Beam"
-
-[cursor.vi_mode_style]
-blinking = "off"
-shape = "Block"
+general.import = [ "~/.config/omarchy/current/theme/alacritty.toml" ]
 
 [env]
 TERM = "xterm-256color"
 
+[terminal]
+osc52 = "CopyPaste"
+
 [font]
-size = 12.0
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+size = 9
 
-[font.bold]
-family = "JetBrainsMono Nerd Font"
-style = "Bold"
+[window]
+padding.x = 14
+padding.y = 14
+decorations = "None"
 
-[font.bold_italic]
-family = "JetbrainsMono Nerd Font"
-style = "Bold Italic"
-
-[font.glyph_offset]
-x = 0
-y = 0
-
-[font.italic]
-family = "JetBrainsMono Nerd Font"
-style = "Italic"
-
-[font.normal]
-family = "JetBrainsMono Nerd Font"
-style = "Regular"
-
-[font.offset]
-x = 0
-y = 0
-
-[mouse]
-hide_when_typing = false
-
-[scrolling]
-history = 10000
-multiplier = 3
-
-[selection]
-save_to_clipboard = true
-semantic_escape_chars = ''',│`|:"' ()[]{}<>	'''
+[keyboard]
+bindings = [
+{ key = "Insert", mods = "Shift", action = "Paste" },
+{ key = "Insert", mods = "Control", action = "Copy" },
+{ key = "Return", mods = "Shift", chars = "\u001B\r" }
+]
 
 [terminal.shell]
 args = ["-l", "-c", "tmux attach || tmux"]
-program = "/bin/zsh"
-
-[window]
-decorations = "full"
-dynamic_padding = true
-title = "Maxwell's Home"
-
-[window.padding]
-x = 0
-y = 0
-
-[general]
-live_config_reload = true
-import = ["/home/kopwithit/.config/alacritty/themes/themes/rose-pine-moon.toml", "/Users/maxwellkopitz/.config/alacritty/themes/themes/rose-pine-moon.toml"]
-
-[terminal]
+program = "/bin/bash"
