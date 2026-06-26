@@ -26,10 +26,8 @@ else
         (   echo ~/dotfiles; \
             find \
             ~/ \
-            ~/src/projects \
-            ~/src \
+            ~/Projects \
             ~/.config \
-            ~/src/projects/exercism/lua \
             -mindepth 1 -maxdepth 1 -type d) \
         | fzf \
         --cycle \
