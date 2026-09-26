@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Claude Code status line: model, session cost, context usage, rate limits.
+# Receives the session state as JSON on stdin; see `statusLine` in settings.json.
+# Segments are omitted when the payload lacks them (rate_limits is absent on
+# API-key, Bedrock and Vertex sessions; spend_limit only appears on gateway).
+
+jq -r '
+  [ (.model.display_name // .model.id // "unknown")
+  , (.cost.total_cost_usd          // 0)
+  , (.context_window.used_tokens   // 0)
+  , (.context_window.max_tokens    // 0)
+  , (.rate_limits.five_hour.used_percentage   // -1)
+  , (.rate_limits.seven_day.used_percentage   // -1)
+  , (.rate_limits.spend_limit.used_percentage // -1)
+  ] | @tsv
+' 2>/dev/null | awk -F'\t' '
+{
+    dim = "\033[2m"; rst = "\033[0m"
+    out = $1
+    if ($2 + 0 > 0)  out = out sprintf("%s  $%.2f%s",   dim, $2, rst)
+    if ($4 + 0 > 0)  out = out sprintf("%s  %.0f%% ctx%s", dim, ($3 / $4) * 100, rst)
+    if ($5 + 0 >= 0) out = out sprintf("%s  %.0f%% 5h%s",  dim, $5, rst)
+    if ($6 + 0 >= 0) out = out sprintf("%s  %.0f%% wk%s",  dim, $6, rst)
+    if ($7 + 0 >= 0) out = out sprintf("%s  %.0f%% spend%s", dim, $7, rst)
+    print out
+}
+'
