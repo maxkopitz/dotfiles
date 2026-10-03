@@ -10,6 +10,7 @@
   },
   "effortLevel": "high",
   "tui": "fullscreen",
+  "autoMemoryEnabled": false,
   "theme": "dark",
   "editorMode": "vim"
 }
