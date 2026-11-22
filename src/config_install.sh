@@ -18,7 +18,7 @@ install_macos() {
   brew install wget 
   brew install tmux
   brew install nvim
-  brew install node
+  brew install fnm
   brew install go
   brew install --cask alacritty
   brew install --cask protonvpn
@@ -40,7 +40,6 @@ install_macos() {
 
 install_tmux_depdencies() {
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 }
 install_oh_my_zsh() {
   if [[ ! -f ~/.zshrc ]]; then
